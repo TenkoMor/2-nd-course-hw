@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.top{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/Rectangle1.png);
+    height: 1024px;
+
+    &__heading{
+        padding-top: 217px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #ffffff;
+    }
+
+    &__description{
+        padding-top: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #ffffff;
+        padding-bottom: 44px;
+
+        &_bald{
+            font-weight: 700;
+        }
+    }
+    
+    &__button{
+        background: #9C0332;
+        border-radius: 30px;
+        width: 234px;
+        height: 49px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.games{
+    background: #000915;
+    height: 556px;
+    display: flex;
+    align-items: center;
+
+    &__games-box{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__icon{
+        width: 378px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        display: flex ;
+        align-items: flex-end;
+        padding-left: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__icon_1{
+        background-image: url(img/Rectangle6.png);
+    }
+
+    &__icon_2{
+        background-image: url(img/Rectangle7.png);
+    }
+
+    &__icon_3{
+        background-image: url(img/Rectangle8.png);
+    }
+}
