@@ -3,8 +3,8 @@ alert(a);
 a = 20
 alert(a);
 
-let ReleaseYear = 2007
-alert('Год выпуска первого iPhone ' + ReleaseYear);
+let releaseYear = 2007
+alert('Год выпуска первого iPhone ' + releaseYear);
 
 let creator = 'Brendan Eich'
 alert('Имя создателя языка JavaScript - ' + creator);
@@ -28,8 +28,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num += 1;
-num -= 1;
+num ++;
+num --;
 alert(num);
 
 let age = Number(prompt('Сколько вам лет?'))
