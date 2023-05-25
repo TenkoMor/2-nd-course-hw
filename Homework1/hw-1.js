@@ -3,11 +3,11 @@ alert(a);
 a = 20
 alert(a);
 
-let releaseYear = 2007
-alert('Год выпуска первого iPhone ' + releaseYear);
+let year = 2007
+alert('Год выпуска первого iPhone ' + year);
 
-let creator = 'Brendan Eich'
-alert('Имя создателя языка JavaScript - ' + creator);
+let name1 = 'Brendan Eich'
+alert('Имя создателя языка JavaScript - ' + name1);
 
 let number1 = 10
 let number2 = 2

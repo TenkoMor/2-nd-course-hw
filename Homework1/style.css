@@ -35,14 +35,16 @@ body {
   color: #ffffff;
   padding-bottom: 44px;
 }
-.top__description_bald {
+.top__description_bold {
   font-weight: 700;
 }
 .top__button {
-  background: #9C0332;
+  display: block;
+  background-color: #9C0332;
   border-radius: 30px;
   width: 234px;
   height: 49px;
+  text-decoration: none;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
@@ -50,12 +52,18 @@ body {
   color: #ffffff;
   outline: none;
   border: none;
-  cursor: pointer;
+}
+.top__button-text {
+  text-align: center;
+  padding-top: 13.5px;
+}
+.top__button:hover {
+  background-color: #EB443F;
 }
 
 .games {
   background: #000915;
-  height: 556px;
+  min-height: 556px;
   display: flex;
   align-items: center;
 }
@@ -77,6 +85,11 @@ body {
   align-items: flex-end;
   padding-left: 32px;
   padding-bottom: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.games__icon:hover {
+  outline: 3px solid #44D2FF;
 }
 .games__icon_1 {
   background-image: url(img/Rectangle6.png);
@@ -86,4 +99,56 @@ body {
 }
 .games__icon_3 {
   background-image: url(img/Rectangle8.png);
+}
+
+@media (max-width: 1246px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .games__games-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+@media (max-width: 835px) {
+  .top__heading-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__heading {
+    text-align: center;
+  }
+  .top__description {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 425px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top__heading {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .top__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .games__icon {
+    width: 343px;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 374px) {
+  .games__icon {
+    max-width: 256px;
+    height: 256px;
+    border-radius: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

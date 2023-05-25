@@ -1,0 +1,40 @@
+@media (max-width: 1246px) {
+
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .games{
+
+        &__games-box{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 128px;
+            padding-bottom: 128px;
+        }
+    }
+
+}
+
+@media (max-width: 835px) {
+
+    .top{
+
+        &__heading-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__heading{
+            text-align: center;
+        }
+
+        &__description{
+            text-align: center;
+            padding-bottom: 32px;
+        }
+    }
+}
+
