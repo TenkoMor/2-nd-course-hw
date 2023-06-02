@@ -28,17 +28,11 @@ body {
   color: #ffffff;
 }
 .top__description {
-  padding-top: 32px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
-  color: #ffffff;
   padding-bottom: 44px;
+  padding-top: 32px;
 }
-.top__description_bold {
-  font-weight: 700;
-}
-.top__button {
+
+.button {
   display: block;
   background-color: #9C0332;
   border-radius: 30px;
@@ -53,12 +47,29 @@ body {
   outline: none;
   border: none;
 }
-.top__button-text {
+.button__text {
   text-align: center;
   padding-top: 13.5px;
 }
-.top__button:hover {
+.button:hover {
   background-color: #EB443F;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.description_bold {
+  font-weight: 700;
 }
 
 .games {
@@ -101,6 +112,27 @@ body {
   background-image: url(img/Rectangle8.png);
 }
 
+.section-game {
+  background: #000915;
+  max-height: 800px;
+}
+.section-game__item-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+.section-game__img-mob {
+  display: none;
+}
+
+.heading-box {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
 @media (max-width: 1246px) {
   .center {
     padding-left: 24px;
@@ -112,19 +144,41 @@ body {
     padding-top: 128px;
     padding-bottom: 128px;
   }
+  .section-game__item-box {
+    flex-wrap: wrap;
+  }
 }
-@media (max-width: 835px) {
+@media (max-width: 1148px) {
+  .section-game__img-full {
+    display: none;
+  }
+  .section-game__img-mob {
+    display: block;
+  }
+}
+@media (max-width: 984px) {
   .top__heading-box {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .top__description {
+    padding-bottom: 32px;
+  }
   .top__heading {
     text-align: center;
   }
-  .top__description {
+  .section-game__item-box {
+    justify-content: center;
+    gap: 64px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .description {
     text-align: center;
-    padding-bottom: 32px;
+  }
+  .heading-box {
+    align-items: center;
   }
 }
 @media (max-width: 425px) {
@@ -136,9 +190,13 @@ body {
     font-size: 32px;
     line-height: 39px;
   }
-  .top__description {
+  .description {
     font-size: 14px;
     line-height: 22px;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 39px;
   }
   .games__icon {
     width: 343px;
@@ -150,5 +208,10 @@ body {
     max-width: 256px;
     height: 256px;
     border-radius: 16px;
+  }
+}
+@media (max-width: 344px) {
+  .section-game__img-mob {
+    width: 256px;
   }
 }/*# sourceMappingURL=style.css.map */
