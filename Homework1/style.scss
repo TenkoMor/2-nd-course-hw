@@ -28,42 +28,52 @@ body {
         color: #ffffff;
     }
 
-    &__description {
-        padding-top: 32px;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 32px;
-        color: #ffffff;
+    &__description{
         padding-bottom: 44px;
+        padding-top: 32px;
+    }
+}
 
-        &_bold {
-            font-weight: 700;
-        }
+.button {
+    display: block;
+    background-color: #9C0332;
+    border-radius: 30px;
+    width: 234px;
+    height: 49px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+
+    &__text{
+        text-align: center;
+        padding-top: calc( (49px - 22px) / 2);
     }
 
-    &__button {
-        display: block;
-        background-color: #9C0332;
-        border-radius: 30px;
-        width: 234px;
-        height: 49px;
-        text-decoration: none;
-        font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #ffffff;
-        outline: none;
-        border: none;
+    &:hover{
+        background-color: #EB443F;
+    }
+}
 
-        &-text{
-            text-align: center;
-            padding-top: calc( (49px - 22px) / 2);
-        }
+.heading{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff
+}
 
-        &:hover{
-            background-color: #EB443F;
-        }
+.description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+
+    &_bold {
+        font-weight: 700;
     }
 }
 
@@ -111,6 +121,29 @@ body {
     &__icon_3 {
         background-image: url(img/Rectangle8.png);
     }
+}
+
+.section-game{
+    background: #000915;
+    max-height: 800px;
+
+    &__item-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 233px;
+        padding-bottom: 233px;
+    }
+
+    &__img-mob{
+        display: none;
+    }
+}
+
+.heading-box{
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
 }
 
 @import 'tablet';

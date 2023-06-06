@@ -11,11 +11,16 @@
             font-size: 32px;
             line-height: 39px; 
         }
+    }
 
-        &__description{
-            font-size: 14px;
-            line-height: 22px;
-        }
+    .description{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .heading{
+        font-size: 32px;
+        line-height: 39px;
     }
 
     .games{
@@ -25,7 +30,6 @@
             border-radius: 16px;
         }
     }
-
 }
 
 @media (max-width: 374px) {
@@ -36,6 +40,16 @@
             max-width: 256px;
             height: 256px;
             border-radius: 16px;
+        }
+    }
+}
+
+@media (max-width: 344px) {
+
+    .section-game{
+
+        &__img-mob{
+            width: 256px;
         }
     }
 }
