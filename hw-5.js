@@ -1,8 +1,9 @@
 //task1
 const numbers1 = [1, 5, 4, 10, 0, 3]
 for (let item of numbers1) {
-    if (item == 10) {
+    if (item !== 10) {
         console.log(item)
+    } else {
         break
     }
 }
@@ -41,14 +42,11 @@ console.log(numbers6)
 
 //task7
 const numbers7 = [9, 8, 7, 6, 5]
-for (let item of numbers7) {
-    if ((a = (prompt("Введите число"))) == item) {
-        console.log(`Число ${a} содержится в массиве`)
-        break
-    } else {
-        console.log(`Число ${a} не содержится в массиве`)
-        break
-    }
+number = (prompt("Введите число"))
+if (numbers7.includes(Number(number))) {
+    console.log(`Число ${number} содержится в массиве`)
+} else {
+    console.log(`Число ${number} не содержится в массиве`)
 }
 
 //task8
