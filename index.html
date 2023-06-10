@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="center top">
+        <div class="top__heading-box">
+            <h1 class="top__heading">Добро пожаловать<br>на мой сайт !</h1>
+            <p class="description top__description">Вам предстоит пройти несколько увлекательных<br>игр. Если готов нажимай <span
+                    class="description description_bold">поехали</span> и <span class="description description_bold">приступай</span>
+            </p>
+            <a class="button" href="#"><p class="button__text">Поехали!</p></a>
+        </div>
+    </section>
+    <section class="center games">
+        <div class="games__games-box">
+            <div class="games__icon games__icon_1">Игра 1</div>
+            <div class="games__icon games__icon_2">Игра 2</div>
+            <div class="games__icon games__icon_3">Игра 2</div>
+        </div>
+    </section>
+    <section class="center section-game">
+        <div class="section-game__item-box">
+            <div class="heading-box">
+                <h2 class="heading">Времена года!</h2>
+                <p class="description">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы<br>узнаете к какому времени года он относится</p>
+                <a onclick="alert(month())" class="button" href="#"><p class="button__text">Играть!</p></a>
+            </div>
+            <img class="section-game__img-full" src="img/undraw_video_game_night_8h8m.png" alt="">
+            <img class="section-game__img-mob" src="img/undraw_video_game_night_8h8mmob.png" alt="">
+        </div>
+    </section>
+    <script src="games.js"></script>
+    <script src="hw-5.js"></script>
+</body>
+
+</html>
