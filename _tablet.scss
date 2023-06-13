@@ -27,12 +27,8 @@
 
     .section-game{
 
-       &__img-full{
-        display: none;
-       }
-
-       &__img-mob{
-        display: block;
+       &__img{
+        width: 344px;
        }
     }
 }
@@ -63,6 +59,10 @@
             gap: 64px;
             padding-top: 51px;
             padding-bottom: 85px;
+        }
+
+        &__img{
+            order: 1;
         }
     }
 

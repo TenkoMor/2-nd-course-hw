@@ -63,7 +63,7 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .description {
@@ -74,6 +74,10 @@ body {
 
     &_bold {
         font-weight: 700;
+    }
+
+    &_center{
+        text-align: center;
     }
 }
 
@@ -127,6 +131,14 @@ body {
     background: #000915;
     max-height: 800px;
 
+    &_bg{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(img/unsplash_iO0I6-mhDEY.png);
+        height: 800px;
+    }
+
     &__item-box{
         display: flex;
         justify-content: space-between;
@@ -144,6 +156,26 @@ body {
     display: flex;
     gap: 32px;
     flex-direction: column;
+
+    &_center{
+        align-items: center;
+        padding-top: 276px;
+    }
+}
+
+.footer{
+    height: 80px;
+    background-color: #000915;
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+
+    &__text{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: calc((80px - 15px) / 2)
+    }
 }
 
 @import 'tablet';
