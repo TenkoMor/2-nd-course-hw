@@ -15,7 +15,6 @@ const month = (monthNumber = Number(prompt("Введит номер месяца
 
 //game2 - memorize the words
 let array = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
-console.log(array)
 const words = () => {
     array = array.sort(() => Math.random() - 0.5);
     alert(array)
